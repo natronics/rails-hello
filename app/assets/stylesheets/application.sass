@@ -13,4 +13,25 @@
  *= require_tree .
  *= require_self
  */
-@import "bulma";
+
+// Bulma import starting from installed assets from bulma gem (in RVM)
+
+$primary: #941e56
+$family-sans-serif: "Lato", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+
+@import "sass/utilities/utilities"
+@import "sass/base/base"
+@import "sass/elements/elements"
+@import "sass/components/components"
+@import "sass/layout/layout"
+
+
+section
+  @extend .section
+
+header
+  @extend .container
+
+  h1
+    @extend .title
+
